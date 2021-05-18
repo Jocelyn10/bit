@@ -62,6 +62,7 @@ import { ExportAspect } from '@teambit/export';
 import { EjectAspect } from '@teambit/eject';
 import { UserAgentAspect } from '@teambit/user-agent';
 import { AngularAspect } from '@teambit/angular';
+import { NgPackagrAspect } from '@teambit/ng-packagr';
 import { BitAspect } from './bit.aspect';
 
 export const manifestsMap = {
@@ -128,6 +129,7 @@ export const manifestsMap = {
   [ApplicationAspect.id]: ApplicationAspect,
   [EjectAspect.id]: EjectAspect,
   [AngularAspect.id]: AngularAspect,
+  [NgPackagrAspect.id]: NgPackagrAspect,
 };
 
 export function isCoreAspect(id: string) {
